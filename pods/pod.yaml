@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: APPLICATION_NAME
+  labels:
+    # This section could contain any number of custom labeles
+    env: production
+    key: value
+spec:
+  containers:
+      # Name of the container
+    - name: CONTAINER_NAME
+      # Image used in the container
+      image: IMAGE_NAME
