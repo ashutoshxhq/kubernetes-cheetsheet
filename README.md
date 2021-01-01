@@ -17,6 +17,12 @@ This command can be used for detailed listing of resources in kubernetes
 kubectl get pods/replicasets/deployments/services -o wide
 ```
 
+## Describe a resource
+This command can be used for describing a resource in kubernetes
+```
+kubectl describe pod/replicaset/deployment RESOURCE_NAME
+```
+
 ## Creating a resource
 This command can be used for creating a resource in kubernetes
 ```
