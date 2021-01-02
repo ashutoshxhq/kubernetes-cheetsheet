@@ -3,15 +3,14 @@ kind: Service
 metadata:
   name: myapp-service
 spec:
-  # This type will expose the application for access from outside the cluster using the node ip and nodePort
-  type: NodePort
+  # By default it is ClusterIP so even if you miss this property it is fine
+  # This type will expose the application for internal service to service communication
+  type: ClusterIP
   ports:
     # Post where the service is exposed
     - port: 80
     # port where the application is exposed
       targetPort: 80
-    # Port on the node where the application will be exposed
-      nodePort: 30008
   selector:
     # Select using pod labels
     app: myapp

@@ -4,7 +4,8 @@ metadata:
   name: myapp-service
 spec:
   # This type will expose the application for access from outside the cluster using the node ip and nodePort
-  type: NodePort
+  # This is only supported by some cloud providers and it fall backs to NodePort where it is not supported
+  type: LoadBalancer
   ports:
     # Post where the service is exposed
     - port: 80
