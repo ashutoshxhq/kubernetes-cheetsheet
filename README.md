@@ -68,3 +68,9 @@ This command can be used to undo last rollout of the deployment.
 ```
 kubectl rollout undo deployment/DEPLOYMENT_NAME
 ```
+
+## Scale a deployment
+This command can be used to scale a deployment.
+```
+kubectl scale deployment DEPLOYMENT_NAME --replicas=NUMBER_OF_REPLICAS
+```
