@@ -51,6 +51,11 @@ This command can be used for editing a resource in kubernetes
 kubectl edit pod/replicaset/deployment RESOURCE_NAME
 ```
 
+This command will extract the pod defination to a file and we can edit it and re create the pods.
+```
+kubectl get pod <pod-name> -o yaml > pod-definition.yaml
+```
+
 ## Watching rollout status of deployment
 This command can be used for watching rollout status of deployments.
 ```
